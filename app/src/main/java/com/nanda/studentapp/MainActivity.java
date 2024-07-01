@@ -1,5 +1,6 @@
 package com.nanda.studentapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -23,7 +24,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
-    AppCompatButton b1;
+    AppCompatButton b1,b2;
     EditText ed1,ed2,ed3,ed4,ed5,ed6,ed7,ed8;
     String apiurl="https://courseapplogix.onrender.com/addstudents";
     @Override
@@ -41,6 +42,14 @@ public class MainActivity extends AppCompatActivity {
         ed7=(EditText) findViewById(R.id.email);
         ed8=(EditText) findViewById(R.id.add);
         b1=(AppCompatButton) findViewById(R.id.sub);
+        b2=(AppCompatButton) findViewById(R.id.view);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), view.class);
+                startActivity(i);
+            }
+        });
 b1.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {

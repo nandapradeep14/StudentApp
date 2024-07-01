@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="200px"
+    android:background="@drawable/background"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
         android:layout_width="match_parent"
@@ -13,7 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your first name"
-        android:id="@+id/fname"/>
+        android:id="@+id/fname"
+        android:drawableLeft="@drawable/baseline_arrow_forward_24"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,7 +26,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your last name"
-        android:id="@+id/lname"/>
+        android:id="@+id/lname"
+        android:drawableLeft="@drawable/baseline_arrow_forward_24"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,7 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your college name"
-        android:id="@+id/cname"/>
+        android:id="@+id/cname"
+        android:drawableLeft="@drawable/baseline_arrow_forward_24"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,7 +46,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your date of birth"
-        android:id="@+id/dob"/>
+        android:id="@+id/dob"
+        android:drawableLeft="@drawable/baseline_arrow_forward_24"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,7 +56,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your course name"
-        android:id="@+id/course"/>
+        android:id="@+id/course"
+        android:drawableLeft="@drawable/baseline_arrow_forward_24"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -60,6 +67,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter your mobile number"
         android:id="@+id/mob"
+        android:drawableLeft="@drawable/baseline_arrow_forward_24"
         />
     <TextView
         android:layout_width="match_parent"
@@ -69,7 +77,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your Email"
-        android:id="@+id/email"/>
+        android:id="@+id/email"
+        android:drawableLeft="@drawable/baseline_arrow_forward_24"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -78,10 +87,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your Address"
-        android:id="@+id/add"/>
+        android:id="@+id/add"
+        android:drawableLeft="@drawable/baseline_arrow_forward_24"/>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="submit"
         android:id="@+id/sub"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="view all"
+        android:id="@+id/view"/>
 </LinearLayout>
