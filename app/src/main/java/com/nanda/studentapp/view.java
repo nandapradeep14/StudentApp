@@ -12,20 +12,20 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class view extends AppCompatActivity {
-    AppCompatButton b3;
+    AppCompatButton b1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_view);
-        b3=(AppCompatButton) findViewById(R.id.view);
-/*b3.setOnClickListener(new View.OnClickListener() {
+        b1=(AppCompatButton) findViewById(R.id.vieww);
+b1.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
         Toast.makeText(getApplicationContext(), "viewed", Toast.LENGTH_LONG).show();
     }
-});*/
+});
 
     }
 }
